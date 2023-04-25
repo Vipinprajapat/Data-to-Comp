@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 30%;
+            border: solid;
+            text-align: center;
+            margin: 25px auto;
+        }
+        .serif{
+            font-family: serif;
+        }
+        .sanserif{
+            font-family: sans-serif;
+        }
+        .monospace{
+            font-family: monospace;
+        }
+        .cursive{
+            font-family: cursive;
+        }
+        .fantasy{
+            font-family: fantasy;
+            /* font-family: fantasy,sans-serif; this means that if first property did'nt installed in client's system then it will used second property of font called web safe fonts font fallbacks*/
+        }
+        p::first-letter{
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Font Family</h1>
+    <p class="serif">
+        Serif <br> dolor sit amet consectetur, adipisicing elit. Ex consequuntur culpa, porro iure illo maiores nihil fugit dolorem vitae. Voluptatibus esse ut rerum velit ipsam facilis, debitis omnis ipsa hic.
+    </p>
+    <p class="sanserif">
+        Sanserif <br>dolor sit amet consectetur, adipisicing elit. Ex consequuntur culpa, porro iure illo maiores nihil fugit dolorem vitae. Voluptatibus esse ut rerum velit ipsam facilis, debitis omnis ipsa hic.
+    </p>
+    <p class="monospace">
+        Monospace <br>dolor sit amet consectetur, adipisicing elit. Ex consequuntur culpa, porro iure illo maiores nihil fugit dolorem vitae. Voluptatibus esse ut rerum velit ipsam facilis, debitis omnis ipsa hic.
+    </p>
+    <p class="cursive">
+       Cursive <br>dolor sit amet consectetur, adipisicing elit. Ex consequuntur culpa, porro iure illo maiores nihil fugit dolorem vitae. Voluptatibus esse ut rerum velit ipsam facilis, debitis omnis ipsa hic.
+    </p>
+    <p class="fantasy">
+        Fantasy<br>  dolor sit amet consectetur, adipisicing elit. Ex consequuntur culpa, porro iure illo maiores nihil fugit dolorem vitae. Voluptatibus esse ut rerum velit ipsam facilis, debitis omnis ipsa hic.
+    </p>
+</body>
+</html>

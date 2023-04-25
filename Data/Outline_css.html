@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outline{
+            margin: auto;
+            height: 250px;
+            width: 250px;
+            background-color: red;
+            border: 15px solid;
+            outline: 15px solid green;
+            /* outline-style: solid;
+            outline-color: green;
+            outline-width: 20px; */
+            outline-offset: 10px;
+            /* gives space between outline and border of content */
+
+        }
+        .demo{
+            margin: 100px auto;
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            border: 55px solid;
+            outline: 60px solid green;
+        }
+        .main{
+            background-color: red;
+            height: 350px;
+            width: 350px;
+            border: 2px solid;
+        }
+        .a{
+            background-color: green;
+            margin: 45px auto;
+            height: 250px;
+            width: 250px;
+            border: 2px solid;
+        }
+        .b{
+            background-color: blue;
+            margin: 40px auto;
+            height: 150px;
+            width: 150px;
+            border: 2px solid;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:350px;
+            height:350px;
+            border: 2px solid;
+        }
+        .box-a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:250px;
+            height:250px;
+            border: 2px solid;
+        }
+        .box-b{
+            width:150px;
+            height:150px;
+            border: 2px solid;
+        }
+        .box-1{
+            display: grid;
+            place-items: center;
+            width:350px;
+            height:350px;
+            border: 2px solid;
+        }
+        .box-a1{
+            display: grid;
+            place-items: center;
+            width:250px;
+            height:250px;
+            border: 2px solid;
+        }
+        .box-b1{
+            width:150px;
+            height:150px;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Css Outline</h1>
+    <div class="outline">
+
+    </div>
+    <br><br><br><br><br>
+    <div class="main">
+        <div class="a">
+            <div class="b">manually margin</div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="box">
+        <div class="box-a">
+            <div class="box-b">display flex</div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="box-1">
+        <div class="box-a1">
+            <div class="box-b1">display grid</div>
+        </div>
+    </div>
+    <div class="demo"></div>
+</body>
+</html>
