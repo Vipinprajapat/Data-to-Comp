@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td{
+            border-collapse: collapse;
+            text-align: center;
+        }
+        #a{
+            /* border: 1px solid red; */
+            border-left: none;
+        }
+        #b{
+            border-right: none;
+        }
+        #c{
+            border-left: none;
+        }
+        #d{
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
+        #e{
+            border-right: none;
+        }
+        #f{
+            vertical-align: top;
+            border-top: none;
+            border-left: none;
+        }
+        #g{
+            /* border-left: none; */
+            /* border-right: none; */
+        }
+    </style>
+</head>
+<body>
+    <table width="50%" border="1px" height="420px">
+        <!-- <caption>The Task Table</caption> -->
+        <figure>
+            <figcaption>Task table</figcaption>
+        </figure>
+        <tr>
+            <td colspan="4" rowspan="2">1</td>
+            <td colspan="4">2</td>
+        </tr>
+        <tr>
+            <td colspan="4">3</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">4</td>
+            <td colspan="2" rowspan="2">5</td>
+            <td colspan="2" rowspan="2" id="b">7</td>
+            <td colspan="2" id="a">.</td>
+           
+        </tr>
+        <tr>
+            <td colspan="2">6</td>
+        </tr>
+        <tr>
+            <td colspan="8">8</td>
+     
+        </tr>
+        <tr>
+            <td colspan="2">9</td>
+            <td colspan="2">10</td>
+            <td colspan="4">11</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td colspan="3">20</td>
+            <td colspan="3" id="d"></td>
+            <td colspan="2"  id="c"></td>
+            <!-- <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> -->
+        </tr>
+        <tr>
+            <td colspan="3" id="e"></td>
+            <td colspan="3" id="f">22</td>
+            <td colspan="2" id="g">21</td>
+            <!-- <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> -->
+        </tr>
+    </table>
+</body>
+</html>
